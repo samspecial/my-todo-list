@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To do List App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="todo.css" />
+
+</head>
+
+<body>
+    <!-- container section that house all the other section -->
+    <div class="container">
+        <!--First Section Row-->
+        <div class="row">
+            <div class="col-6 top">
+                <h1>My To-Do List App</h1>
+                <label for="">Trap every second of the day. <br> Make it count. <br> Be a good manager of the ultimate resources in life. </label> <br>
+                <!-- Collects Information about User Proposed Activity -->
+                <form action="" id="addContent">
+                    <!-- Input for Proposed Activity -->
+                    <input type="text" id="itemise" placeholder="Type your activity here"> <br>
+                    <!-- This is where the Time Stamp when the event was create will comes in -->
+                    <input type="text" placeholder="Set the date of your activity">
+                    <span><button>ADD</button></span>
+                </form>
+
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 bottom">
+                <ul id="todoList">
+                    <li>Go to the Gym <button class="btn">X</button></li>
+                    <li>Code practice <button class="btn">X</button></li>
+                    <li>Surf the internet<button class="btn">X</button></li>
+                    <li>Speak to my Babygirl<button class="btn">X</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="todo.js"></script>
+</body>
+
+</html>

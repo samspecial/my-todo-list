@@ -4,14 +4,15 @@ var addForm = document.getElementById('addContent');
 var updateList = document.getElementById('todoList');
 //ADD EVENT LISTENER TO THE BUTTON
 addForm.addEventListener('submit', addUp);
-
-
-
 //Function addContent
 function addUp(e) {
     e.preventDefault();
     //GET INPUT VALUE
     var newContent = document.getElementById('itemise').value;
+    if (newContent == "") {
+        return alert("You Are Yet To Enter Your To-do");
+    } else console.log(newContent);
+
     //Create A New Element
     var li = document.createElement('li');
     li.className = ('col-6 bottom');
@@ -23,8 +24,8 @@ function addUp(e) {
     deleteList.appendChild(document.createTextNode('X'));
     li.appendChild(deleteList);
 
-    updateList.appendChild(li);
-
+    updateList.appendChild(li).style.display = 'block';
+    console.log(updateList);
 
 }
 
@@ -41,3 +42,5 @@ function removeList(e) {
     }
 
 }
+
+// Add Conditions to the Select Button
